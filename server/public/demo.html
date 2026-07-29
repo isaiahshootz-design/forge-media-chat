@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge Media — Chat Widget Demo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px;
+      color: #1a1f2e;
+      line-height: 1.6;
+    }
+    h1 { font-size: 22px; }
+    code { background: #f2f3f5; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Forge Media — Chat Widget Demo Page</h1>
+  <p>
+    This is a plain placeholder page standing in for the real Forge Media
+    website. The chat bubble in the bottom-right corner is the live widget,
+    talking to this same backend server at <code>/api/chat</code>.
+  </p>
+  <p>
+    Click the bubble and try a message like: "I need a new website for my
+    landscaping business."
+  </p>
+
+  <!--
+    In production, point data-api-url at your deployed backend's public URL,
+    e.g. https://api.forgemedia.com/api/chat
+  -->
+  <script
+    src="/widget/forge-chat-widget.js"
+    data-api-url="/api/chat"
+    data-agent-name="Forge Media"
+  ></script>
+</body>
+</html>
